@@ -1,0 +1,145 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions SRL - Mobiliario de Oficina de Alta Calidad</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Tailwind Configuration para paleta de colores y fuente */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A192F', /* Azul oscuro de fondo */
+                        secondary: '#112240', /* Azul oscuro para secciones */
+                        accent: '#64FFDA', /* Verde brillante para highlights/botones */
+                        textLight: '#CCD6F6', /* Gris claro para texto principal */
+                        textDim: '#8892B0', /* Gris tenue para texto secundario */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], /* Fuente sans-serif moderna */
+                    },
+                },
+            },
+        };
+        /* Importar fuente Inter desde Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-primary text-textLight font-sans antialiased">
+
+    <!-- Header (Opcional, para logo o navegación) -->
+    <header class="py-4 px-6 md:px-12 flex justify-between items-center max-w-7xl mx-auto">
+        <a href="#" class="text-2xl font-bold text-accent tracking-wide">TechSolutions SRL</a>
+        <!-- Se podría agregar navegación si fuera necesario, pero para una LP simple, no es crucial -->
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="min-h-[85vh] flex items-center justify-center text-center p-6 md:p-12">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-accent mb-4 md:mb-6">
+                Diseñamos el Futuro de tu Espacio de Trabajo.
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-textDim mb-8 md:mb-10 max-w-2xl mx-auto">
+                Mobiliario de oficina premium que combina innovación, ergonomía y diseño para potenciar la productividad.
+            </p>
+            <a href="https://wa.me/5491112345678?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20productos%20y%20servicios."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-block bg-accent text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-80 transition duration-300 transform hover:scale-105 shadow-lg">
+                ¡Contáctanos por WhatsApp!
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-16 md:py-24 bg-secondary px-6 md:px-12">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-accent mb-12 md:mb-16">Nuestros Productos y Soluciones</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Tarjeta de Servicio 1: Escritorios -->
+                <div class="bg-primary p-6 md:p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-textLight mb-4">Escritorios de Diseño Moderno</h3>
+                    <p class="text-textDim leading-relaxed">
+                        Desde elegantes escritorios de madera oscura hasta estaciones de trabajo minimalistas y ajustables.
+                        Soluciones para cada necesidad.
+                    </p>
+                </div>
+                <!-- Tarjeta de Servicio 2: Sillas Ergonómicas -->
+                <div class="bg-primary p-6 md:p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-textLight mb-4">Sillas Ergonómicas Premium</h3>
+                    <p class="text-textDim leading-relaxed">
+                        Máximo confort y soporte para largas jornadas laborales. Variedad de modelos y ajustes
+                        para cuidar tu postura.
+                    </p>
+                </div>
+                <!-- Tarjeta de Servicio 3: Almacenamiento -->
+                <div class="bg-primary p-6 md:p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-textLight mb-4">Soluciones de Almacenamiento</h3>
+                    <p class="text-textDim leading-relaxed">
+                        Armarios, estanterías y archivadores que combinan funcionalidad con estética,
+                        manteniendo tu espacio organizado.
+                    </p>
+                </div>
+                <!-- Tarjeta de Servicio 4: Diseño de Oficinas -->
+                <div class="bg-primary p-6 md:p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-textLight mb-4">Diseño de Oficinas y Asesoramiento</h3>
+                    <p class="text-textDim leading-relaxed">
+                        Te ayudamos a planificar y optimizar la distribución de tu oficina para un ambiente productivo.
+                    </p>
+                </div>
+                <!-- Tarjeta de Servicio 5: Mobiliario Personalizado -->
+                <div class="bg-primary p-6 md:p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-textLight mb-4">Proyectos a Medida</h3>
+                    <p class="text-textDim leading-relaxed">
+                        Creamos mobiliario personalizado para proyectos especiales y requerimientos únicos de tu empresa.
+                    </p>
+                </div>
+                <!-- Tarjeta de Servicio 6: Accesorios -->
+                <div class="bg-primary p-6 md:p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-textLight mb-4">Accesorios y Complementos</h3>
+                    <p class="text-textDim leading-relaxed">
+                        Desde iluminación hasta elementos decorativos que completan y realzan cada espacio de trabajo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="py-16 md:py-24 px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-accent mb-8 md:mb-10">Sobre TechSolutions SRL</h2>
+            <p class="text-lg md:text-xl text-textDim leading-relaxed mb-6">
+                En TechSolutions SRL, somos apasionados por transformar los espacios de trabajo en entornos
+                innovadores y altamente funcionales. Con años de experiencia en el mercado, nos especializamos
+                en proveer mobiliario de oficina de la más alta calidad, diseñado para satisfacer las
+                demandas de las empresas modernas.
+            </p>
+            <p class="text-lg md:text-xl text-textDim leading-relaxed">
+                Nuestra misión es ir más allá de la simple venta de muebles; buscamos ser tu socio estratégico,
+                ofreciendo soluciones integrales que mejoren la productividad, el bienestar y la estética
+                de tu oficina. Confía en nosotros para crear el ambiente ideal que tu equipo merece.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer con CTA final -->
+    <footer class="bg-primary py-12 md:py-16 px-6 md:px-12 text-center border-t border-secondary">
+        <h2 class="text-3xl sm:text-4xl font-bold text-accent mb-6 md:mb-8">¿Listo para mejorar tu espacio?</h2>
+        <p class="text-lg md:text-xl text-textDim mb-8 md:mb-10">
+            Contáctanos hoy mismo y descubre cómo TechSolutions SRL puede potenciar tu empresa.
+        </p>
+        <a href="https://wa.me/5491112345678?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20productos%20y%20servicios."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-block bg-accent text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-80 transition duration-300 transform hover:scale-105 shadow-lg">
+            ¡Conversemos por WhatsApp!
+        </a>
+        <p class="text-textDim text-sm mt-12 md:mt-16">&copy; 2023 TechSolutions SRL. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+```
